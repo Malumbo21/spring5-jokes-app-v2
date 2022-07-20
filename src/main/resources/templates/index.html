@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuck Norris Jokes</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: Inter,sans-serif;
+    }
+    .jokes-box{
+        border: 1px solid #d2d2d2;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 600px;
+        min-height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .joke{
+
+    }
+</style>
+<body>
+<h1>Chuck Norris Jokes</h1>
+    <div class="jokes-box">
+        <blockquote class="joke" th:text="${joke}">Show Jokes Here.....</blockquote>
+    </div>
+</body>
+</html>
